@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<!--Dwight Eyac BSIT-1A  December 16,2020  Web Layout Activity-->
+	<head>
+		<title>Login and Register</title>
+		<style>
+a{text-decoration: none;}
+              body{
+      		     margin: 0;
+      		     padding: 0;
+      		     background: white;
+      		     color:white;
+                       font-size: 20px;
+      		     font-family: "Bookman Old Style";
+                       }	
+			
+                  header {                        
+                       background-image: url("akatsuki.jpg");
+                       padding: 20px;
+                       height: 192px;
+                       border: 20px;
+                       display: grid;
+                       grid-template-columns: 1fr 99fr;
+                       grid-template-rows: 1fr;
+                       }
+            
+                  .photo{
+            	     float: left;
+                       position: relative;
+            	     height: 100%;
+                       width: auto;
+            	     margin-right: 20px;
+                  }
+
+                  .info{
+                        background-color: black;
+                        margin:10px;
+                        display: table;
+                        padding: 5px;
+
+                        }
+
+                  .section1{
+                  	display: grid;
+                        grid-template-columns: 75fr 25fr;
+                        grid-template-rows: 1fr 200px;
+                        color:#042863;
+                        }
+
+                  .parag{
+                        background: #d9d9d9;
+                        float: left;
+                        padding-bottom: 80px;
+                        margin:10px;
+                        padding-top:50px;
+                        padding-right: 15px;
+                        padding-left: 30px;
+                        float: left;
+                        }
+
+                  aside{
+                  	background: #d9d9d9;
+                  	margin:10px;
+                  	padding-top:50px;
+                  	padding-left: 20px;
+                  	float: left;
+                        }
+
+                  .articletitle{
+                  	padding: 5px;
+                        background-color: #c7200a;
+                  	display: table;
+                    color: white;
+                        }
+
+                  .article{
+                   	color: black;
+                        }
+
+                  .other{
+                        padding: 5px;
+                        background-color: #277df5;
+                        display: table;
+                        color:white;
+                        }
+
+                  .link {
+                        color: #173beb;
+                        border-bottom: 2px solid currentColor;
+                        display: table;
+                        }
+
+                  footer{
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        background-color: #c7200a;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        }
+
+                  .footlink{
+                        padding-left: 30px;
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                        }
+                  footer{
+                        color:white;
+                  }
+                  b{
+                        font-weight:normal;
+                        font-size: 27px;
+                        }
+
+                  .copyright{
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                        grid-column-start: 2;
+                        grid-column-end: 3;                  
+                        background-color: #c7200a;
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        padding-top: 20%;
+                        color:white;
+                        }
+
+		</style>
+
+	</head>
+
+<body>
+      <div class="container">
+		<header>
+			<img src="dwight.png" alt="Dwight's Picture" class="photo">
+			<div>
+				<p class="info">Dwight Eyac</p>
+				<p class="info">Web Development Activity</p>
+				<p class="info">dwight.eyac20@gmail.com</p>
+				<p class="info">103-D Cahipa Hipodromo Cebu City</p>
+			</div>
+		</header>
+
+		<div class="section1">
+      <div class="parag">
+      <p class="articletitle">Login</p>
+      <form action="/action_page.php">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="text" id="password" name="password" placeholder="password"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <hr>
+      <p class="articletitle">Register</p>
+      <form action="/action_page.php">
+        <label for="firstn">First name:</label><br>
+        <input type="text" id="firstn" name="firstn" placeholder="First Name"><br>
+        <label for="familyn">Family Name:</label><br>
+        <input type="text" id="familyn" name="familyn" placeholder="Family Name"><br>
+        <label for="middlen">Middle Name:</label><br>
+        <input type="text" id="middlen" name="middlen" placeholder="Middle Name"><br>
+        <label for="email">Email Address:</label><br>
+        <input type="Email" id="email" name="email" placeholder="Email Address"><br>
+        <label for="homeadd">Home Adress:</label><br>
+        <input type="text" id="homeadd" name="homeadd" placeholder="Home Address"><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label><br><br>
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="Number" id="mobile" name="mobile" placeholder="Mobile Number"><br>
+        <label for="date">Date of Birth:</label><br>
+        <input type="date" id="date" name="date" placeholder="Date of Birth"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city" placeholder="City"><br>
+        <label> ZIP Code</label><br>
+        <input type="text" pattern="[0-9]{4}" placeholder="Zip Code"><br>
+        <label for="province">Province:</label><br>
+        <input type="text" id="province" name="province" placeholder="Province"><br>
+        <label for="city">Hobbies:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Video Games">
+<label for="hobby1"> Video Games</label><br>
+<input type="checkbox" id="hobby2" name="hobby2" value="Music">
+<label for="hobby2"> Music</label><br>
+<input type="checkbox" id="hobby3" name="hobby3" value="Travel">
+<label for="hobby3"> Travel</label><br>
+<input type="checkbox" id="hobby4" name="hobby4" value="Photography">
+<label for="hobby4"> Photography</label><br><br>
+
+
+
+        <input type="submit" value="Submit">|<input type="reset" value="Reset">
+      </form>
+    </div>
+                  <aside>
+                        <p class="other">Other Links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        <p class="link">About Me</p>
+                        <p class="link">My Image Gallery</p>
+                        <p class="link">Contacts</p>
+                        <a href="index.html"><p class="link">Back to Homepage</p></a>
+                        
+                  </aside>
+
+                  <div class="copyright">
+                        <p>&copy; Dwight Eyac 2020</p>
+                  </div>
+                  <footer>
+                        <div class="footlink">
+                              <p><b>Footer Links</b><br>
+                              About Me<br>
+                              My Image Gallery<br>
+                              Contacts<br></p>
+                        </div>
+                  </footer>
+		</div>
+	</div>
+</body>
+</html>
